@@ -6,180 +6,64 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>课程表</title>
+    <link rel="stylesheet" href="class-schedule.css">
 </head>
 <body>
-<style>
-    #a1 {
-        width: 90px;
-        height: 35px;
-        background-color: #c686ff;
-        float: left;
-        padding: 10px auto
-    }
 
-    #a2 {
-        width: 90px;
-        height: 35px;
-        background-color: #cca26c;
-        float: left;
-        padding: 10px auto
-    }
+<table class="datalist">
+    <caption>课程表</caption>
+    <thread>
+    <tr>
+        <th>时间</th>
+        <th>星期一</th>
+        <th>星期二</th>
+        <th>星期三</th>
+        <th>星期四</th>
+        <th>星期五</th>
+    </tr>
+    </thread>
+    <tbody>
 
-    #a3 {
-        width: 120px;
-        height: 35px;
-        background-color: #66CCFF;
-        float: left;
-        padding: 10px auto
-    }
+    <tr>
+        <td rowspan = "2">上午</td>
+        <td>语文</td>
+        <td>语文</td>
+        <td>语文</td>
+        <td>语文</td>
+        <td>语文</td>
+    </tr>
 
-    #a4 {
-        width: 300px;
-        height: 35px;
-        background-color: white;
-        float: left;
-    }
+    <tr>
+        <td>数学</td>
+        <td>数学</td>
+        <td>数学</td>
+        <td>数学</td>
+        <td>数学</td>
+    </tr>
 
-    .p1 {
-        font-size: 15px;
-        text-align: center
-    }
+    <tr>
+        <td rowspan = '2'>下午</td>
+        <td>历史</td>
+        <td>历史</td>
+        <td>历史</td>
+        <td>历史</td>
+        <td>历史</td>
+    </tr>
 
-    .p2 {
-        font-size: 25px;
-        font-family: 黑体;
-        text-align: center;
-    }
-
-
-</style>
-
-</head>
-
-<body>
-
-    <p class="p2">2016-2017秋季学期课程表</p>
-
-    <div id="a4">&nbsp;</div>
-
-    <div id="a3"><p class="p1">课程/时间</p></div>
-    <div id="a2"><p class="p1">周一</p></div>
-    <div id="a1"><p class="p1">周二</p></div>
-    <div id="a2"><p class="p1">周三</p></div>
-
-    <div id="a1"><p class="p1">周四</p></div>
-    <div id="a2"><p class="p1">周五</p></div>
-    <div id="a1"><p class="p1">周六</p></div>
-    <div id="a2"><p class="p1">周日</p></div>
-
-    <Br><br>
-
-    <div id="a4">&nbsp;</div>
-    <div id="a3"><p class="p1">语文</p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1">5、6、7</p></div>
-    <div id="a2"><p class="p1"></p></div>
-
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-
-    <Br><br>
-
-    <div id="a4">&nbsp;</div>
-    <div id="a3"><p class="p1">数学</p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1">9、10、11 </p></div>
-
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-
-    <Br><br>
-
-    <div id="a4">&nbsp;</div>
-    <div id="a3"><p class="p1">生物</p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1">&nbsp;</p>
-
-    </div>
-    <div id="a1"><p class="p1">下3、4 </p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-
-    <Br><br>
-
-    <div id="a4">&nbsp;</div>
-    <div id="a3"><p class="p1">化学</p></div>
-    <div id="a2"><p class="p1">5、6、7 </p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1">&nbsp;</p>
-
-    </div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-
-    <Br><br>
-
-    <div id="a4">&nbsp;</div>
-    <div id="a3"><p class="p1">历史</p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1">3、4 </p>
-
-    </div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-
-    <Br><br>
-
-    <div id="a4">&nbsp;</div>
-    <div id="a3"><p class="p1">政治</p></div>
-    <div id="a2"><p class="p1">9、10 </p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1">&nbsp;</p>
-
-    </div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-
-    <Br><br>
-
-    <div id="a4">&nbsp;</div>
-    <div id="a3"><p class="p1">法律</p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1">9、10</p></div>
-    <div id="a2"><p class="p1">&nbsp;</p>
-
-    </div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
-
-    <Br><br>
-
-    <div id="a4">&nbsp;</div>
-    <div id="a3"><p class="p1">地理</p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1">&nbsp;</p></div>
-
-    <div id="a1"><p class="p1">9、10 </p></div>
-    <div id="a2"><p class="p1"></p></div>
-    <div id="a1"><p class="p1"></p></div>
-    <div id="a2"><p class="p1"></p></div>
+    <tr>
+        <td>法律</td>
+        <td>法律</td>
+        <td>法律</td>
+        <td>法律</td>
+        <td>法律</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="6">制作时间:2016年7月31日</td>
+    </tr>
+    </tfoot>
+</table>
 
 
 </body>

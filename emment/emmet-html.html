@@ -1,0 +1,160 @@
+!!!
+!!!4t - loose.dtd
+!!!4s - strict.dtd
+!!!xt - transitional.dtd
+!!!xs - xhtml1-strict.dtd
+!!!xxs - xhtml11.dtd
+<!--alias of html:5-->
+!!!+doc[lang=${lang}] Alias html:5 !
+<!--alias of html-->
+html>(head>meta[charset=${charset}]+title{${1:Document}})+body Alias doc
+html>(head>meta[http-equiv="Content-Type" content="text/html;charset=${charset}"]+title{${1:Document}})+body Alias doc4
+!!!4t+doc4[lang=${lang}] Alias html:4t
+!!!4s+doc4[lang=${lang}] Alias html:4s
+!!!xt+doc4[xmlns=http://www.w3.org/1999/xhtml xml:lang=${lang}] Alias html:xt
+!!!xs+doc4[xmlns=http://www.w3.org/1999/xhtml xml:lang=${lang}] Alias html:xs
+!!!xxs+doc4[xmlns=http://www.w3.org/1999/xhtml xml:lang=${lang}] Alias html:xxs
+<!--basic -->
+a
+a:link
+a:mail
+abbr
+acr
+base
+basefont
+br
+frame
+hr
+bdo
+bdo:r
+bdo:l
+col
+link
+link:css
+link:print
+link:favicon
+link:touch
+link:rss
+link:atom
+link:im
+meta
+meta:utf
+meta:win
+meta:vp
+meta:compat
+style
+script
+script:src
+img
+img:s Alias: ri:d
+img:z Alias: ri:v
+pic>src:m+img Alias: ri:a
+pic>src:t+img Alias: ri:t
+picture
+src
+src:sc
+src:s
+src:m
+src:t
+src:z
+src:mt
+src:mz
+iframe
+embed
+object
+param
+map
+area
+area:d
+area:c
+area:r
+area:p
+form
+form:get
+form:post
+label
+input
+inp
+input:h
+input:t
+input:search
+input:email
+input:url
+input:p
+input:datetime
+input:date
+input:datetime-local
+input:month
+input:week
+input:time
+input:tel
+input:number
+input:color
+input:c
+input:r
+input:range
+input:f
+input:s
+input:i
+input:b
+input:reset
+select
+select:d
+opt
+textarea
+marquee
+menu:c
+menu:t
+video
+audio
+html:xml
+keygen
+command
+btn:s
+btn:r
+btn:d
+fst:d
+bq
+fig
+figc
+pic
+ifr
+emb
+obj
+cap
+colg
+fst
+btn
+optg
+tarea
+leg
+sect
+art
+hdr
+ftr
+adr
+dlg
+str
+prog
+mn
+tem
+datag
+datal
+kg
+out
+det
+cmd
+c
+cc:ie6
+cc:ie
+cc:noie
+table+
+tr+
+ul+
+dl+
+ol+
+map+
+select+
+pic+
+optg+
+colg+

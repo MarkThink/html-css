@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>article</title>
+</head>
+<body>
+    <!--art>hdr>h1{极客学院}+p{Hello, 欢迎来到极客学院}^p{Hello}+ftr>p{这是底部}-->
+
+
+    <!--<article>-->
+        <!--<header>-->
+            <!--<h1>极客学院</h1>-->
+            <!--<p>Hello, 欢迎来到极客学院</p>-->
+        <!--</header>-->
+        <!--<p>Hello</p>-->
+        <!--<footer>-->
+            <!--<p>这是底部</p>-->
+        <!--</footer>-->
+    <!--</article>-->
+
+
+    <!--art>hdr>h1{极客学院}+p{Hello, 欢迎来到极客学院}^(art>hdr{作者}+p{评论}+ftr{time})+ftr>p{这是底部}-->
+    <!--文章与评论关联-->
+    <article>
+        <header>
+            <h1>极客学院</h1>
+            <p>Hello, 欢迎来到极客学院</p>
+        </header>
+        <article>
+            <header>作者</header>
+            <p>评论</p>
+            <footer>time</footer>
+        </article>
+        <footer>
+            <p>这是底部</p>
+        </footer>
+    </article>
+
+    <!--art>h1{这是一个内嵌页面}+object>embed[width=600,height=200]-->
+
+    <article>
+        <h1>这是一个内嵌页面</h1>
+        <object data="" type="">
+            <embed src="#" type="" width="600" height="200">
+        </object>
+    </article>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>section</title>
+</head>
+<body>
+
+<!--sect>h1{苹果}+p{这是一个水果,可以吃,而且很好吃}-->
+
+<section>
+    <h1>苹果</h1>
+    <p>这是一个水果,可以吃,而且很好吃</p>
+</section>
+
+<!--art>h1{苹果}+p{这是一个水果,可以吃,而且很好吃}+(sect>h2{红富士}+p{这是一种外表很工的苹果,吃起来也不错})+(sect>h2{国光}+p{这种苹果吃起来也不错})-->
+
+<article>
+    <h1>苹果</h1>
+    <p>这是一个水果,可以吃,而且很好吃</p>
+    <section>
+        <h2>红富士</h2>
+        <p>这是一种外表很工的苹果,吃起来也不错</p>
+    </section>
+    <section>
+        <h2>国光</h2>
+        <p>这种苹果吃起来也不错</p>
+    </section>
+</article>
+
+<!--sect>h1{水果}+(art>h2{苹果}+p{内容})+(art>h2{苹果}+p{内容})+(art>h2{苹果}+p{内容})-->
+
+<section>
+    <h1>水果</h1>
+    <article>
+        <h2>苹果</h2>
+        <p>内容</p>
+    </article>
+    <article>
+        <h2>苹果</h2>
+        <p>内容</p>
+    </article>
+    <article>
+        <h2>苹果</h2>
+        <p>内容</p>
+    </article>
+</section>
+
+<!--article强调独立性-->
+<!--section强调分段分块-->
+
+<!--1.不要将section元素作为设置样式的页面容器-这是div的工作-->
+<!--2.如果article、aside、nav元素更符合使用条件,不要使用section元素-->
+<!--3.没有标题内容,不要使用section元素-->
+
+</body>
+</html>

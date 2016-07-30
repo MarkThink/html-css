@@ -1,20 +1,29 @@
-
-body{
-    background-color:#ebf5ff;   /* 页面背景色 */
-    margin:0px; padding:4px;
-    text-align:center;          /* 居中对齐（IE有效） */
-}
 .datalist{
-    width:50%;
-    color:#0046a6;              /* 表格文字颜色 */
-    background-color:#d2e8ff;   /* 表格背景色 */
-    font-family:Arial;          /* 表格字体 */
+    border:1px solid #0058a3;   /* 表格边框 */
+    font-family:Arial;
+    border-collapse:collapse;   /* 边框重叠 */
+    background-color:#eaf5ff;   /* 表格背景色 */
+    font-size:14px;
 }
 .datalist caption{
-    font-size:18px;             /* 标题文字大小 */
-    font-weight:bold;           /* 标题文字粗体 */
+    padding-bottom:5px;
+    text-align:left;
 }
 .datalist th{
-    color:#003e7e;              /* 行、列名称颜色 */
-    background-color:#7bb3ff;   /* 行、列名称的背景色 */
+    border:1px solid #0058a3;   /* 行名称边框 */
+    background-color:#4bacff;   /* 行名称背景色 */
+    color:#FFFFFF;              /* 行名称颜色 */
+    font-weight:bold;
+    padding-top:4px; padding-bottom:4px;
+    padding-left:12px; padding-right:12px;
+    text-align:center;
+}
+.datalist td{
+    border:1px solid #0058a3;   /* 单元格边框 */
+    text-align:left;
+    padding-top:4px; padding-bottom:4px;
+    padding-left:10px; padding-right:10px;
+}
+.datalist tr.altrow{
+    background-color:#c7e5ff;   /* 隔行变色 */
 }

@@ -4,10 +4,12 @@
     border-collapse:collapse;   /* 边框重叠 */
     background-color:#eaf5ff;   /* 表格背景色 */
     font-size:14px;
+    margin: 0 auto;
+    width:600px;
 }
 .datalist caption{
     padding-bottom:5px;
-    text-align:left;
+    text-align:center;
 }
 .datalist th{
     border:1px solid #0058a3;   /* 行名称边框 */
@@ -19,6 +21,7 @@
     padding-left:12px;
     padding-right:12px;
     text-align:center;
+    width: 100px;
 }
 .datalist td{
     border:1px solid #0058a3;   /* 单元格边框 */

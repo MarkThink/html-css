@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formenctrype</title>
+</head>
+<body>
+
+<!--此属性指定将数据回发到服务器时浏览器使用的编码类型-->
+
+<!--form>input:t[formenctype=text/plain]+input:t[formenctype=multipart/form-data]++input:t[formenctype=application/x-www-form-urlencoded]-->
+
+<form action="">
+    <!--以纯文本方式编码-->
+    <input type="text" name="" id="" formenctype="text/plain">
+    <!--表单数据被编码为一条数据 - 上传文件时需要-->
+    <input type="text" name="" id="" formenctype="multipart/form-data">
+    <!--表单数据被编码为键/值对形式 此为默认属性-->
+    <input type="text" name="" id="" formenctype="application/x-www-form-urlencoded">
+</form>
+
+
+</body>
+</html>

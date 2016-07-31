@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hgroup</title>
+</head>
+<body>
+
+<!--标题分组的使用-->
+
+    <!--未使用标题分组-->
+    <!--art>(hdr>h1{这是文章的标题}+h2{这是一个子标题}+p>timd[datatime=2015-10-10]{2015-10-10})+div{这是内容}+ftr{这是底部}-->
+
+<article>
+    <header>
+        <h1>这是文章的标题</h1>
+        <h2>这是一个子标题</h2>
+        <p>
+            <timd datatime="2015-10-10">2015-10-10</timd>
+        </p>
+    </header>
+    <div>这是内容</div>
+    <footer>这是底部</footer>
+</article>
+    <!--使用标题分组-->
+    <!--art>(hdr>hgroup>h1{这是文章的标题}+h2{这是一个子标题}^p>timd[datatime=2015-10-10]{2015-10-10})+div{这是内容}+ftr{这是底部}-->
+
+<article>
+    <header>
+        <hgroup>
+            <h1>这是文章的标题</h1>
+            <h2>这是一个子标题</h2>
+        </hgroup>
+        <p>
+            <timd datatime="2015-10-10">2015-10-10</timd>
+        </p>
+    </header>
+    <div>这是内容</div>
+    <footer>这是底部</footer>
+</article>
+
+</body>
+</html>

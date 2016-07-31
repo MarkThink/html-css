@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formtarget</title>
+</head>
+<body>
+
+<!--参考a标签属性-->
+
+<!--form#testform>-->
+<!--input:s[name=v1,value=Post提交,formtarget=_blank,formaction=http://www.baidu.com]-->
+<!--input:s[name=v2,value=Get提交,formtarget=_self,formaction=http://www.csdn.net]-->
+<!--input:s[name=v3,value=Get提交,formtarget=_parent,formaction=http://www.oschina.net]-->
+<!--input:s[name=v4,value=Get提交,formtarget=_top,formaction=http://www.chinaz.com]-->
+<!--input:s[name=v5,value=Get提交,formtarget=framename,formaction=http://www.trjcn.com]-->
+
+<form action="" id="testform">
+    <input type="submit" value="blank提交" name="v1" formtarget="_blank" formaction="http://www.baidu.com">
+    <input type="submit" value="self提交" name="v2" formtarget="_self" formaction="http://www.csdn.net">
+    <input type="submit" value="parent提交" name="v3" formtarget="_parent" formaction="http://www.oschina.net">
+    <input type="submit" value="top提交" name="v4" formtarget="_top" formaction="http://www.chinaz.com">
+    <input type="submit" value="framename提交" name="v5" formtarget="framename" formaction="http://www.trjcn.com">
+</form>
+
+
+
+
+</body>
+</html>

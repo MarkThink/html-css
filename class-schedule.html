@@ -10,22 +10,27 @@
 </head>
 <body>
 
-<table class="datalist">
+<table class="datalist" >
     <caption>课程表</caption>
-    <thread>
+
+    <!--表头部分-->
+    <thead>
     <tr>
-        <th>时间</th>
+        <th colspan="2">时间</th>
         <th>星期一</th>
         <th>星期二</th>
         <th>星期三</th>
         <th>星期四</th>
         <th>星期五</th>
     </tr>
-    </thread>
+    </thead>
+
+    <!--内容主体-->
     <tbody>
 
     <tr>
         <td rowspan = "2">上午</td>
+        <td>1</td>
         <td>语文</td>
         <td>语文</td>
         <td>语文</td>
@@ -34,6 +39,7 @@
     </tr>
 
     <tr class="altrow">
+        <td>2</td>
         <td>数学</td>
         <td>数学</td>
         <td>数学</td>
@@ -43,6 +49,7 @@
 
     <tr>
         <td rowspan = '2'>下午</td>
+        <td>3</td>
         <td>历史</td>
         <td>历史</td>
         <td>历史</td>
@@ -51,6 +58,7 @@
     </tr>
 
     <tr class="altrow">
+        <td>4</td>
         <td>法律</td>
         <td>法律</td>
         <td>法律</td>
@@ -58,9 +66,10 @@
         <td>法律</td>
     </tr>
     </tbody>
+    <!--页脚部分-->
     <tfoot>
     <tr>
-        <td colspan="6">制作时间:2016年7月31日</td>
+        <td colspan="7">制作时间:2016年7月31日</td>
     </tr>
     </tfoot>
 </table>

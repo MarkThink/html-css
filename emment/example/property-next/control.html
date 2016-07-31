@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>control</title>
+</head>
+<body>
+
+
+<!--form>(label#label{邮编}>input#txt_zip[maxlength=6]+small{请输入6位数字})+input:b[value=设置默认值,onclick=setValue]-->
+
+
+<script>
+    function setValue(){
+        var label=document.getElementById("label");
+        var textbox=label.control;
+        textbox.value="718308";
+    }
+</script>
+
+<form action="">
+    <label id="label" for="txt_zip">
+        邮编
+        <input type="text" id="txt_zip" maxlength="6">
+        <small>请输入6位数字</small>
+    </label>
+    <input type="button" value="设置默认值" onclick="setValue()">
+</form>
+
+</body>
+</html>

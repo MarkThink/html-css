@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input</title>
+</head>
+<body>
+
+<!--url类型-->
+<!--input:url[name=url,value=http://www.baidu.com]-->
+
+<!--form>input:url[name=url,value=http://www.baidu.com]+input:s[value=提交]-->
+<!--<form action="">-->
+    <!--<input type="url" name="url" id="" value="http://www.baidu.com">-->
+    <!--<input type="submit" value="提交">-->
+<!--</form>-->
+
+<!--email类型-->
+
+<!--form>input:email[name=email,value=dxwsker@qq.com]+input:s[value=提交]-->
+<!--<form action="">-->
+    <!--<input type="email" name="email" id="" value="dxwsker@qq.com">-->
+    <!--<input type="submit" value="提交">-->
+<!--</form>-->
+
+<!--date类型-->
+
+<!--form>input:date[name=date]+input:s[value=提交]-->
+<!--<form action="">-->
+    <!--<input type="date" name="date" id="">-->
+    <!--<input type="submit" value="提交">-->
+<!--</form>-->
+
+<!--time类型-->
+
+<!--form>input:time[name=time,value=10:00]+input:s[value=提交]-->
+
+<!--<form action="">-->
+    <!--<input type="time" name="time" id="" value="10:00">-->
+    <!--<input type="submit" value="提交">-->
+<!--</form>-->
+
+<!--datetime类型 UTC日期时间-->
+
+<!--<input type="datetime" name="" id="">-->
+
+<!--<input type="datetime-local" name="" id="">-->
+
+
+<!--month元素-->
+<!--<input type="month" name="" id="">-->
+
+<!--week元素-->
+<!--<input type="week" name="" id="">-->
+
+<!--number元素-->
+<!--<input type="number" name="" value="15" min="10" max="100" step="5">-->
+
+<!--计算器-->
+<!--form>input:number#num1+{+}+input:number#num2+{=}+input:number#result[readonly]+input:b[value=计算]-->
+
+<!--<script>-->
+    <!--function sum() {-->
+        <!--var n1 = document.getElementById("num1").valueAsNumber;-->
+        <!--var n2 = document.getElementById("num2").valueAsNumber;-->
+        <!--document.getElementById("result").valueAsNumber = n1+n2;-->
+    <!--}-->
+<!--</script>-->
+<!--<form action="">-->
+    <!--<input type="number" name="" id="num1">-->
+    <!--+-->
+    <!--<input type="number" name="" id="num2">-->
+    <!--=-->
+    <!--<input type="number" name="" id="result" readonly>-->
+    <!--<input type="button" value="计算" onclick="sum()">-->
+<!--</form>-->
+
+<!--range元素-->
+
+<!--input:range[name=range,value=25,min=0,max=100,setp=5]-->
+<!--<input type="range" name="range" id="" value="25" min="0" max="100" setp="5">-->
+
+<!--search元素-->
+<!--<input type="search" name="" id="">-->
+
+<!--tel元素-->
+<!--<input type="tel" name="" id="">-->
+
+<!--color元素 颜色选取器-->
+<!--<input type="color" name="" onchange="document.body.style.backgroundColor=document.getElementById('currentColor').textContent=this.value">-->
+<!--<span id="currentColor"></span>-->
+
+<!--output元素的追加-->
+
+<script>
+    function value_change() {
+        var number = document.getElementById("range").value;
+        document.getElementById("output").value = number;
+    }
+</script>
+<!--form#testform>input:range#range[min=0,max=100,step=5,value=10]+output#output{10}-->
+<form action="" id="testform">
+    <input type="range" name="" id="range" min="0" max="100" step="5" value="10" onchange="value_change()">
+    <output id="output">10</output>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>increase</title>
+</head>
+<body>
+
+<!--figure及figcaption元素-->
+<!--fig>img*3+figc{标题}-->
+<figure>
+    <img src="https://www.baidu.com/img/bd_logo1.png" alt="">
+    <img src="https://www.baidu.com/img/bd_logo1.png" alt="">
+    <img src="https://www.baidu.com/img/bd_logo1.png" alt="">
+    <figcaption>标题</figcaption>
+</figure>
+<br>
+<!--details和summary元素-->
+
+<script>
+    function detail_onclick(detail) {
+        var p = document.getElementById("p");
+        if (detail.open) {
+            p.style.visibility = "hidden";
+        }else{
+            p.style.visibility = "visible";
+        }
+    }
+</script>
+
+<!--det#detail>summary{速度与激情}+p#p[style="visibility: hidden"]{你好,这是一部电影描述}-->
+<details id="detail" onclick="detail_onclick(this)">
+    <summary>速度与激情</summary>
+    <p id="p" style="visibility: hidden">你好,这是一部电影描述</p>
+</details>
+
+<br>
+
+<!--mark 强调或高亮-->
+<p>这是一些内容,我要<mark>是</mark>高亮</p>
+
+
+
+
+</body>
+</html>

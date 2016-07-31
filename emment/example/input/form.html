@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form validate</title>
+</head>
+<body>
+
+<script>
+    function check() {
+        var email = document.getElementById("email");
+        if (email.value==""){
+            alert("请输入email");
+            return false
+        }else if (!email.checkValidity()){
+            alert("请输入正确的email地址");
+            return false;
+        }
+    }
+</script>
+
+<!--form#testform[novalidate=true]>label[for=email]{Email:}+input:email[name=email,id=email]+input:s[value=提交]-->
+<form action="" id="testform" onsubmit="check()" novalidate="true">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>

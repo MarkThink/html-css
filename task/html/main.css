@@ -1,0 +1,45 @@
+header{
+/*    background-color: #00FF80;*/
+    height: 60px;
+}
+
+.wrap ul li{
+    float: left;
+    margin-left: 55px;
+}
+
+.user{
+    float: right;
+}
+
+.user div{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 20px;
+}
+
+article{
+    background-color: #ccc;
+    height: 1000px;
+}
+.info{
+    height: 460px;
+    background-color: #4c4c4c;
+}
+.info-wrap{
+    height: 440px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #999;
+    padding-top: 20px;
+    text-align: center;
+    
+}
+p h1{
+    margin: 0px;
+}
+footer{
+    background-color: #00F;
+    height: 100px;
+}
